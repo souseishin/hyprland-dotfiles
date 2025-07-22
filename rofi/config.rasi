@@ -1,0 +1,23 @@
+configuration {
+    font: "JetBrains Mono Nerd Font 10";
+    line-margin: 10;
+
+    display-ssh:    "";
+    display-run:    "";
+    display-drun:   "";
+    display-window: "";
+    display-combi:  "";
+    show-icons:     true;
+}
+
+
+@theme "~/.config/rofi/nord.rasi"
+
+listview {
+	lines: 8;
+	columns: 1;
+}
+
+window {
+	width: 30%;
+}
