@@ -20,7 +20,7 @@
 - Clipboard: Clipse
 - Notification daemon: swaync 
 - Audio Visualizer: cava 
-
+- Lockscreen: hyprlock
 
 
 
