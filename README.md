@@ -2,6 +2,7 @@
     <h1>るり's Arch Hyprland Rice</h1>
     <h3></h3>
 </div>
+
 ## Screenshots
 <img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/87994e3d-464d-425a-a0f1-6db8ad9a334a" />
 <img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/9cea11d6-9511-4645-b9da-83f2336ec977" />
