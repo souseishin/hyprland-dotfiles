@@ -8,6 +8,8 @@
 <img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/9cea11d6-9511-4645-b9da-83f2336ec977" />
 <img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/616190a7-45df-4dbe-962c-3e1cd46442cc" />
 <img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/3884679a-42a3-4446-95e3-1afc67fdac50" />
+<img width="2560" height="1600" alt="image" src="https://github.com/user-attachments/assets/ffb627f7-a602-43f8-aeed-9f286c046896" />
+
 
 ## Applications
 - Terminal: kitty
