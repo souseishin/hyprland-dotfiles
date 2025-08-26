@@ -21,7 +21,7 @@
 - Text editor: neovim
 - Wallpaper: swww
 - Clipboard: Clipse
-- Notification daemon: swaync 
+- Notification daemon: dunst
 - Audio Visualizer: cava 
 - Lockscreen: hyprlock
 
