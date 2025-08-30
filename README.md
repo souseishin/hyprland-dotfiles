@@ -28,6 +28,6 @@
 
 ### Some additional packages have to be installed to guarantee its funtionality
 - [iwmenu](https://github.com/e-tho/iwmenu)
-
+- hyprshot
 
 ### There's also a simple script that makes fastfetch appear only if there's enough space
