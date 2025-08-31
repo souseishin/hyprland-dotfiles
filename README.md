@@ -26,7 +26,7 @@
 - Lockscreen: hyprlock
 
 
-### Some additional packages have to be installed to guarantee its funtionality
+### Some additional packages have to be installed to guarantee its full funtionality
 - [iwmenu](https://github.com/e-tho/iwmenu)
 - hyprshot
 - btop
