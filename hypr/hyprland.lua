@@ -10,25 +10,26 @@ local fileManager = "kitty -e spf"
 local menu = "vicinae open"
 
 hl.on("hyprland.start", function()
-	hl.exec_cmd("waybar")
-	hl.exec_cmd("dunst")
-	hl.exec_cmd("hypridle")
+	hl.exec_cmd("caelestia shell -d")
+	--hl.exec_cmd("dunst")
+	--hl.exec_cmd("hypridle")
+	hl.exec_cmd("zsh /home/souseishin/checkPacmanUpdates.sh")
 	hl.exec_cmd("fcitx5")
 	hl.exec_cmd("bongocat")
 	hl.exec_cmd("awww-daemon")
 	hl.exec_cmd("vicinae server")
 	hl.exec_cmd("clipse -listen")
 	hl.exec_cmd("systemd-inhibit")
-	hl.exec_cmd("hyprpm reload")
 end)
 
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
+hl.env("QT_QPA_PLATFORMTHEME", "qtengine")
 
 hl.config({
 	general = {
-		gaps_in = 12,
-		gaps_out = 27,
+		gaps_in = 15,
+		gaps_out = 30,
 
 		border_size = 3,
 
@@ -79,11 +80,11 @@ hl.curve("almostLinear", { type = "bezier", points = { { 0.5, 0.5 }, { 0.75, 1 }
 hl.curve("quick", { type = "bezier", points = { { 0.15, 0 }, { 0.1, 1 } } })
 
 -- Default springs
-hl.curve("easy", { type = "spring", mass = 1, stiffness = 71.2633, dampening = 15.8273644 })
+hl.curve("easy", { type = "spring", mass = 1, stiffness = 400, dampening = 30 })
 
 hl.animation({ leaf = "global", enabled = true, speed = 10, bezier = "default" })
-hl.animation({ leaf = "border", enabled = true, speed = 5.39, bezier = "easeOutQuint" })
-hl.animation({ leaf = "windows", enabled = true, speed = 4.79, spring = "easy" })
+hl.animation({ leaf = "border", enabled = true, speed = 10.39, bezier = "easeOutQuint" })
+hl.animation({ leaf = "windows", enabled = true, speed = 6, spring = "easy" })
 hl.animation({ leaf = "windowsIn", enabled = true, speed = 4.1, spring = "easy", style = "popin 87%" })
 hl.animation({ leaf = "windowsOut", enabled = true, speed = 1.49, bezier = "linear", style = "popin 87%" })
 hl.animation({ leaf = "fadeIn", enabled = true, speed = 1.73, bezier = "almostLinear" })
@@ -97,7 +98,7 @@ hl.animation({ leaf = "fadeLayersOut", enabled = true, speed = 1.39, bezier = "a
 hl.animation({ leaf = "workspaces", enabled = true, speed = 1.6, bezier = "almostLinear", style = "slidevert" })
 hl.animation({ leaf = "workspacesIn", enabled = true, speed = 1.21, bezier = "almostLinear", style = "slidevert" })
 hl.animation({ leaf = "workspacesOut", enabled = true, speed = 1.6, bezier = "almostLinear", style = "slidevert" })
-hl.animation({ leaf = "zoomFactor", enabled = true, speed = 7, bezier = "quick" })
+hl.animation({ leaf = "zoomFactor", enabled = true, speed = 10, bezier = "quick" })
 
 hl.config({
 	scrolling = {
@@ -307,3 +308,6 @@ end
 
 hl.bind("SUPER + ALT + mouse:272", dragStart, { description = "Start dragging a kitty", mouse = true })
 hl.bind("SUPER + ALT + mouse:272", dragEnd, { description = "End dragging a kitty", mouse = true, release = true })
+
+-- HyprMod managed settings
+require("hyprland-gui")
